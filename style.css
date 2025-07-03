@@ -1,0 +1,681 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00FF08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+h2.titulo {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #00FF08;
+}
+
+button:hover,
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px#00ff08;
+    transform: scale(1.05);
+
+}
+
+
+
+/*ESTILO DO CABEÇALHO*/
+header {
+    padding: 0px 4%;
+   margin: 0;
+    
+}
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.02);
+    transition: .2s;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.logo img {
+    width: 300px;
+    height: 300px;
+    margin-left: -59px;
+}
+
+
+/* ESPAÇAMENTOS MENU*/
+.interface .menu-desktop {
+    word-spacing: 50px;
+}
+
+/* ESTILO TOPO DO SITE */
+section.topo-do-site {
+    padding: 100px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+
+
+.titulo-principal {
+  font-size: 42px;
+  line-height: 48px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.titulo-principal .backend {
+  display: block;
+  font-size: 26px;
+  font-weight: 400;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+.sub-info {
+  font-size: 18px;
+  font-weight: 300;
+  color: #ccc;
+  margin: 10px 0 25px 0;
+  position: relative;
+}
+
+.sub-info::before {
+  content: "•";
+  color: #00FF08;
+  margin-right: 8px;
+}
+
+.topo-do-site h1 span {
+    color: #00FF08;
+}
+
+.topo-do-site .sub-info{
+    font-size: 18px;
+    color: #ccc;
+    margin-top: -15px;
+}
+
+.topo-do-site .sub-info::before{
+    content: "• ";
+    color: #00ff08;
+    margin-right: 6px;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: white;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+.img-topo-site img {
+
+    box-shadow: 0 0px 20px #00FF08;
+    /* Sombra inicial */
+    transition: box-shadow 0.5s ease;
+    /* Transição suave ao passar o mouse */
+
+}
+
+.img-topo-site img:hover {
+    box-shadow: 0 0px 60px rgba(0, 255, 8, 0.7);
+    /* Sombra mais intensa */
+}
+
+
+@keyframes flutuar {
+    0% {
+        top: -5px;
+    }
+
+    100% {
+        top: 45px;
+    }
+}
+
+.topo-do-site .img-topo-site img {
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+}
+
+/* Estilo das Especialidades */
+section.especialidades {
+    padding: 100px 4%;
+}
+
+section.especialidades .flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.especialidades .especialidades-box {
+    width: 100%;
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+
+.especialidades .especialidades-box i {
+    font-size: 70px;
+    color: #00FF08;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+
+
+/* ESTILO DO SOBRE */
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: white;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #00FF08;
+    display: flex;
+    
+}
+
+.sobre .txt-sobre p {
+    margin: 19px;
+    text-align: justify;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00FF08;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: .2s;
+}
+
+.sobre .img-sobre img:hover {
+    box-shadow: 0 0px 30px rgba(0, 255, 8, 0.7);
+    /* Sombra mais intensa */
+}
+
+.sobre .img-sobre img {
+    width: 400px;
+    height: 500px;
+    border-radius: 100px;
+    box-shadow: 0 0px 15px #00FF08;/* Sombra inicial */
+    transition: box-shadow 0.5s ease;
+    /* Transição suave ao passar o mouse */
+}
+
+/*ESTILO DO PORTFÓLIO */
+
+section.portfolio {
+    padding: 80px 4%;
+    position: relative;
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    filter: grayscale(100%) opacity(0.5);
+    pointer-events: none;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.em-construcao {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px 900px ;
+    border-radius: 20px;
+    text-align: center;
+    z-index: 2;
+}
+
+
+/*ESTILO DO FORMULÁRIO DE CONTATO */
+section.formulario {
+    padding: 40px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px 15px;
+    border-radius: 15PX;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 150px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: #00FF08;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+/* Habilidades */
+section.habilidades {
+    padding: 40px 4%;
+    text-align: center;
+    color: white;
+}
+
+.habilidade-box {
+    padding: 40px 10%;
+
+    border-radius: 30px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 255, 8, 0.5);
+    transition: transform 0.2s;
+}
+
+.habilidade-box:hover {
+    transform: scale(1.05);
+}
+
+.habilidade-box i {
+    font-size: 50px;
+    color: #00FF08;
+}
+
+.habilidade-box h3 {
+    white-space: nowrap;
+    /* Evita que o texto quebre em várias linhas */
+    font-size: 24px;
+    margin: 10px 0;
+    color: white;
+}
+
+.habilidade-box p {
+    font-size: 16px;
+    color: white;
+    margin: 5px 0;
+}
+
+
+/* Estilo para Certificados */
+section.certificados {
+    padding: 60px 4%;
+    background-color: #000000;
+    text-align: center;
+    color: white;
+
+}
+
+.certificados .titulo {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.certificados .certficados-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+
+.certificados .certificado-box {
+    background-color: #2d2d2d;
+    /* Fundo mais claro para os boxes */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+.certificados .certificado-box img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.certificados .certificado-box p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.certificados .certificado-box a {
+    text-decoration: none;
+    color: #00FF08;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.certificado-box :hover {
+    transform: scale(1.05);
+}
+
+.certificados .certificado-box a:hover {
+    color: #ffcc00;
+    /* Cor ao passar o mouse no link */
+}
+
+/* Currículo */
+section.curriculo {
+    padding: 60px;
+    text-align: center;
+    color: white;
+}
+
+section.curriculo button {
+    margin-top: 29px;
+    background-color: #00FF08;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+section.curriculo button:hover {
+    box-shadow: 0 0 15px rgba(0, 255, 8, 0.7);
+    transform: scale(1.05);
+}
+
+
+
+@media screen and (max-width:1020px) {
+
+    /* CLASSES GERAIS */
+    .flex {
+        flex-direction: column;
+    }
+   
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    /* TOPO DO SITE */
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+    .logo{
+        align-items: center;
+        text-align: center;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        display: none;
+    }
+
+    /* ESPECIALIDADES */
+    section.especialidades {
+        padding: 40px 9%;
+    }
+
+
+    /* SOBRE  */
+
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+
+    }
+
+    .sobre .flex {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 60px;
+
+    }
+
+    .btn-social {
+        text-align: center;
+    }
+
+    .img-sobre img {
+        width: 20px;
+        height: 20px;
+
+    }
+
+    /* PORTFÓLIO */
+    section.portfolio {
+        padding: 80px 8%;
+        text-align: center;
+
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto;
+
+    }
+
+    section.portfolio .flex {
+        gap: 50px;
+
+
+    }
+}
+.footer{
+    margin-top: 100px;
+    background-color: rgba(28, 36, 29, 0.568);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  
+}
+
+.footer-content{
+    max-width: 1200px;
+    margin: 0 auto;
+   
+}
+.btn-social {
+    margin-bottom: 25px; 
+
+}
+
+.footer-content .menu-desktop a{
+  
+    color: white;
+    text-decoration: none;
+    margin:  0 10px;
+    transition: color 0.3s ease-in-out;
+}
+.footer-content a:hover{
+    color: rgba(0, 255, 8, 0.7);
+    text-decoration: underline;
+}
+.footer-content p{
+    margin-top: 30px;
+}
