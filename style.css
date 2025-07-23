@@ -471,11 +471,12 @@ section.certificados {
     margin-bottom: 40px;
 }
 
-.certificados .certficados-container {
+.certificados .certificados-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
     justify-items: center;
+    padding: 0 20px;
 }
 
 
